@@ -1,24 +1,24 @@
-# DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification
-This project is the PyTorch implementation of our work: "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification".
+# 🚀🚀🚀DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification
+🛠️ This project is the PyTorch implementation of our work: "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification".
 
-The complete code will be released shortly!!!
+✨✨✨**The complete code will be released shortly!!!**✨✨✨
 
-## 🛠️Step 1：Environment configuration
+## 📘🛠️Step 1：Environment configuration
 
-### Installation
+### ✨Installation
 
 ```shell
 $ conda create --name zoomir python=3.9
 $ source activate zoomir
 ```
 
-Step 1: Install PyTorch 2.0.0+CU118
+📄Step 1: Install PyTorch 2.0.0+CU118
 
 ```shell
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
-Step 2: Install OpenMMLab 2.x 的 `mmcv`, `mmdet`, `mmengine`, `mmsegmentation`
+📄Step 2: Install OpenMMLab 2.x 的 `mmcv`, `mmdet`, `mmengine`, `mmsegmentation`
 
 ```shell
 $ pip install -U openmim
@@ -32,7 +32,7 @@ $ mim install "mmpretrain>=1.0.0rc7"
 $ mim install 'mmagic'
 ```
 
-Step 3: Install `zoomir`
+📄Step 3: Install `zoomir`
 
 ```shell
 $ git clone git@github.com:GrokCV/zoomir.git
@@ -43,11 +43,11 @@ $ python setup.py develop
 👀🚀📊✨
 ## 📘Step 2: Dataset
 ### 📄Dataset introduction
-- ✨**Rosenheim dataset**: The dataset is not publicly available.
+- 📊**Rosenheim dataset**: The dataset is not publicly available.
 
-- ✨**Munich dataset**: The dataset is publicly available. In fact, Munich dataset is not called the Munich dataset, but is part of ***MSLCC dataset***. You can download the dataset from the website at [MSLCC Dataset](https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-51180/ "MSLCC Dataset"). If you use this dataset or view the details of the dataset, please quote or refer to the article: "[Multisensor Earth Observation Image Classification Based on a Multimodal Latent Dirichlet Allocation Model]([10.1109/LGRS.2018.2794511](https://ieeexplore.ieee.org/document/8278834) "Multisensor Earth Observation Image Classification Based on a Multimodal Latent Dirichlet Allocation Model")", thank you.
+- 📊**Munich dataset**: The dataset is publicly available. In fact, Munich dataset is not called the Munich dataset, but is part of ***MSLCC dataset***. You can download the dataset from the website at [MSLCC Dataset](https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-51180/ "MSLCC Dataset"). If you use this dataset or view the details of the dataset, please quote or refer to the article: "[Multisensor Earth Observation Image Classification Based on a Multimodal Latent Dirichlet Allocation Model]([10.1109/LGRS.2018.2794511](https://ieeexplore.ieee.org/document/8278834) "Multisensor Earth Observation Image Classification Based on a Multimodal Latent Dirichlet Allocation Model")", thank you.
 
-- ✨**AIR-PolSAR-Seg dataset**: The dataset is publicly available at [AIR-PolSAR-Seg Dataset](https://github.com/AICyberTeam/AIR-PolSAR-Seg "AIR-PolSAR-Seg Dataset"). For more details on the dataset see [AIR-PolSAR-Seg: A Large-Scale Data Set for Terrain Segmentation in Complex-Scene PolSAR Images](https://ieeexplore.ieee.org/document/9765389/ "AIR-PolSAR-Seg: A Large-Scale Data Set for Terrain Segmentation in Complex-Scene PolSAR Images").
+- 📊**AIR-PolSAR-Seg dataset**: The dataset is publicly available at [AIR-PolSAR-Seg Dataset](https://github.com/AICyberTeam/AIR-PolSAR-Seg "AIR-PolSAR-Seg Dataset"). For more details on the dataset see [AIR-PolSAR-Seg: A Large-Scale Data Set for Terrain Segmentation in Complex-Scene PolSAR Images](https://ieeexplore.ieee.org/document/9765389/ "AIR-PolSAR-Seg: A Large-Scale Data Set for Terrain Segmentation in Complex-Scene PolSAR Images").
 
 ### 📄Preprocessing datasets
 👀 We take the Munich dataset as an example to illustrate the preprocessing process of the dataset. 
@@ -68,15 +68,15 @@ multi_sensor_landcover_classification
 ```
 2. ✨**Crop Munich_s1.tif**
 - We crop the Munich_s1.tif into patches of size 256*256 with a stride of 240. 
-- **Run func "crop_munich_img()" in crop_dataset.py**.
+- 🚀**Run func "crop_munich_img()" in crop_dataset.py**.
 
 3. ✨**Crop munich_anno.tif**
 - We crop the munich_anno.tif into patches of size 256*256 with a stride of 240. 
-- **Run func "crop_munich_ann()" in crop_dataset.py**.
+- 🚀**Run func "crop_munich_ann()" in crop_dataset.py**.
 
 4. ✨**Generate hierarchy superpixels**
-- Run DGG.m in dir "superpixel_hierarchy".
+- 🚀Run DGG.m in dir "superpixel_hierarchy".
 
 👀 At this point, we have processed the data required for training.
 
-## 📘🚀Step 3: Train
+## 📘Step 3: 🚀Train
