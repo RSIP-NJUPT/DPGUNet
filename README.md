@@ -58,11 +58,11 @@ $ python setup.py develop
 multi_sensor_landcover_classification  
 ├── annotations  
 │   ├── berlin_anno.tif  
-│   ├── **munich_anno.tif** (we used)  
+│   ├── ✨munich_anno.tif✨ (we used)  
 ├── images  
 │   ├── Berlin_s1.tif (SAR image)  
 │   ├── Berlin_s2.tif (multispectral image)  
-│   ├── **Munich_s1.tif** (Munich SAR image we used)  
+│   ├── ✨Munich_s1.tif✨ (Munich SAR image we used)  
 │   ├── Munich_s2.tif (multispectral image)  
 ├── README.txt  
 ```
