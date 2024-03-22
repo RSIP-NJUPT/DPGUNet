@@ -11,38 +11,6 @@
 
 ### ✨Installation
 
-```shell
-$ conda create --name zoomir python=3.9
-$ source activate zoomir
-```
-
-📄Step 1: Install PyTorch 2.0.0+CU118
-
-```shell
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-```
-
-📄Step 2: Install OpenMMLab 2.x 的 `mmcv`, `mmdet`, `mmengine`, `mmsegmentation`
-
-```shell
-$ pip install -U openmim
-$ mim install mmengine
-$ mim install "mmcv>=2.0.0"
-$ pip install "mmsegmentation>=1.0.0"
-$ mim install mmdet
-$ mim install "mmrotate>=1.0.0rc1"
-$ mim install mmyolo
-$ mim install "mmpretrain>=1.0.0rc7"
-$ mim install 'mmagic'
-```
-
-📄Step 3: Install `zoomir`
-
-```shell
-$ git clone git@github.com:GrokCV/zoomir.git
-$ cd zoomir
-$ python setup.py develop
-```
 
 👀🚀📊✨
 ## 📘Step 2: Dataset
