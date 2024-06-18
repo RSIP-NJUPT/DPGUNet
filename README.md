@@ -6,14 +6,41 @@
 ⭐Code⭐:[DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification](https://github.com/RSIP-NJUPT/DPGUNet "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification")
 
 ✨✨✨**The complete code will be released shortly!!!**✨✨✨
+🙏🎓🧪🏋️🚩💾💾🦌🐍💓
+## 📘🛠️ Install Dependencies
 
-## 📘🛠️Step 1：Environment configuration
+* Create Conda Environment
 
-### ✨Installation
+```shell
+conda create --name dpgunet python=3.10.12 -y
+conda activate dpgunet
+```
+
+* Install PyTorch 1.12.1+CU116
+
+```shell
+conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+# if conda cannot install, use pip install (recommended and stable)
+# pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu116
+```
+
+* Install Other Dependencies
+
+```shell
+pip install scikit-image
+pip install spectral
+pip install matplotlib
+pip install h5py
+pip install dcor
+pip install opencv-python
+pip install scikit-learn
+pip install numpy==1.23.5
+# now you need to install torch_scatter, please see https://blog.csdn.net/weixin_42421914/article/details/132875571 for details.     Note that first click "torch-1.12.1+cu116", then click "torch_scatter-2.1.0+pt112cu116-cp310-cp310-win_amd64.whl".
+```
 
 
 👀🚀📊✨
-## 📘Step 2: Dataset
+## 📘🛠️ Prepare Dataset
 ### 📄Dataset introduction
 - 📊**Rosenheim dataset**: The dataset is not publicly available.
 
@@ -24,7 +51,7 @@
 ### 📄Preprocessing datasets
 👀 We take the Munich dataset as an example to illustrate the preprocessing process of the dataset. 
 
-1. ✨**Download the [MSLCC Dataset](https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-51180/ "MSLCC Dataset")**;
+**1**. **Download the [MSLCC Dataset](https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-51180/ "MSLCC Dataset")**;
 - Folder structure of MSLCC Dataset:
 ```shell
 multi_sensor_landcover_classification  
@@ -38,17 +65,37 @@ multi_sensor_landcover_classification
 │   ├── Munich_s2.tif (multispectral image)  
 ├── README.txt  
 ```
-2. ✨**Crop Munich_s1.tif**
+**2**. **Crop Munich_s1.tif**
 - We crop the Munich_s1.tif into patches of size 256*256 with a stride of 240. 
 - 🚀**Run func "crop_munich_img()" in crop_dataset.py**.
 
-3. ✨**Crop munich_anno.tif**
+**3**. **Crop munich_anno.tif**
 - We crop the munich_anno.tif into patches of size 256*256 with a stride of 240. 
 - 🚀**Run func "crop_munich_ann()" in crop_dataset.py**.
 
-4. ✨**Generate hierarchy superpixels**
+**4**. **Generate hierarchy superpixels**
 - 🚀Run DGG.m in dir "superpixel_hierarchy".
 
 👀 At this point, we have processed the data required for training.
 
-## 📘Step 3: 🚀Train
+## 📘🚀 Training
+
+
+## 📘🚀 Testing
+
+
+## 🎓 Citation
+  If you find our DPGUNet is useful in your research, please consider citing:
+  ```shell
+  @ARTICLE{10499890,
+  author={Ni, Kang and Yuan, Chunyang and Zheng, Zhizhong and Huang, Nan and Wang, Peng},
+  journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+  title={DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-17},
+  keywords={Convolution;Radar polarimetry;Synthetic aperture radar;Aerodynamics;Telecommunications;Land surface;Representation learning;Dynamic graph;feature fusion;graph u-net;SAR image classification;topological features},
+  doi={10.1109/TAES.2024.3388373}}
+
+  ```
