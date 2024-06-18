@@ -71,14 +71,25 @@ def crop_dataset(img_path: str, out_dir: str, opt: argparse.ArgumentParser) -> N
 
 def crop_munich_img():
     args = parse_args()
-    munich_img = r"F:\Dataset\multi_sensor_landcover_classification\images\Munich_s1.tif"
-    out_dir = r"F:\Dataset\multi_sensor_landcover_classification\crop"
+    munich_img = r"your path\Munich\images\Munich_s1.tif"
+    out_dir = r"your outdir path\munich_s1"
     if not osp.exists(out_dir):
         os.makedirs(out_dir)
-    read_img(munich_img)
+    # read_img(munich_img)
     # crop patches
     crop_dataset(munich_img, out_dir, args)
 
 
+def crop_munich_ann():
+    args = parse_args()
+    munich_img = r"your path\Munich\annotations\munich_anno.tif"
+    out_dir = r"your outdir path\munich_anno"
+    if not osp.exists(out_dir):
+        os.makedirs(out_dir)
+    # read_img(munich_img)
+    # crop patches
+    crop_dataset(munich_img, out_dir, args)
+
 if __name__ == "__main__":
-    crop_munich_img()
+    # crop_munich_img()
+    crop_munich_ann()
