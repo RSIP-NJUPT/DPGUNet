@@ -1,7 +1,7 @@
 # ⭐ ⭐ ⭐ DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification⭐ ⭐ ⭐ 
 🛠️ This project is the PyTorch implementation of our work: "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification".
 
-⭐Paper⭐:[DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification](https://github.com/RSIP-NJUPT/DPGUNet "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification")
+⭐Paper⭐:[DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification](https://ieeexplore.ieee.org/document/10499890 "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification")
 
 ⭐Code⭐:[DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification](https://github.com/RSIP-NJUPT/DPGUNet "DPGUNet: A Dynamic Pyramidal Graph U-Net for SAR Image Classification")
 
